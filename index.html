@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Elysium</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="headerleft">
+                <!--<h1>Elysium : Notre propre paradis</h1>-->
+                <img src="elysiumpng.png" height="150" width="150"  alt="Elysium logo in a png">
+                <div class="divider"></div>
+            </div>
+
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg"alt="Open menu">
+                </a>
+                <ul> 
+                    <li><a href="#" class="menu-close">
+                        <img src="menu.svg">
+                    </a>
+                    </li>
+                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#"></a></li>
+                    <li>
+                        <button>Rejoignez-nous</button>
+                    </li>
+                </ul>  
+
+
+            </nav>
+        </header>
+        <main>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1/5</div>
+                    <img src="ibnkhaldounpic.jpg" style="width:100%" height="">
+                    <div class="text">Developons un monde</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2/5</div>
+                    <img src="ibnkhaldounpic.jpg" style="width:100%">
+                    <div class="text">Developons un monde</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3/5</div>
+                    <img src="ibnkhaldounpic.jpg" style="width:100%">
+                    <div class="text">Developons un monde</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4/5</div>
+                    <img src="ibnkhaldounpic.jpg" style="width:100%">
+                    <div class="text">Developons un monde</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5/5</div>
+                    <img src="ibnkhaldounpic.jpg" style="width:100%">
+                    <div class="text">Developons un monde</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+            <div>
+                <h2>Qui sommes nous?</h2>
+                <p>L’association « <span style="color: peru;">Elysium</span> »se consacre à promouvoir l’égalité des chances dans le système éducatif.
+                     Elle milite pour des réformes qui garantissent un accès équitable aux ressources et aux opportunités d’apprentissage,
+                      quelle que soit l’origine socio-économique des élèves. À travers des programmes de sensibilisation, des ateliers et des partenariats avec des écoles, l’association vise à réduire les inégalités et à créer un environnement d’apprentissage inclusif,
+                     où chaque enfant peut s’épanouir et réaliser son potentiel.</p>
+            </div>
+
+            <div>
+                <h2>Notre Roadmap</h2>
+            </div>
+
+            <div>
+                <h2>Nos partenaires</h2>
+                <div class="partners">
+                    <a href="https://esprit.tn" target=”_blank”>
+                        <img src="espritlogo.jpg" width="100" height="100" alt="Esprit logo" class="partnersimgs">
+                        <p>Esprit</p>
+                    </a>
+                    <a href="https://esprit.tn" target=”_blank”>
+                        <img src="espritlogo.jpg" width="100" height="100" alt="Esprit logo" class="partnersimgs">
+                        <p>Esprit</p>
+                    </a>
+                    <a href="https://esprit.tn" target=”_blank”>
+                        <img src="espritlogo.jpg" width="100" height="100" alt="Esprit logo" class="partnersimgs">
+                        <p>Esprit</p>
+                    </a>
+                    <a href="https://esprit.tn" target=”_blank”>
+                        <img src="espritlogo.jpg" width="100" height="100" alt="Esprit logo" class="partnersimgs">
+                        <p>Esprit</p>
+                    </a>
+                    <a href="https://esprit.tn" target=”_blank”>
+                        <img src="espritlogo.jpg" width="100" height="100" alt="Esprit logo" class="partnersimgs">
+                        <p>Esprit</p>
+                    </a>
+                </div>  
+
+
+            </div>
+
+            <div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Elysium. All rights reserved. </p>
+
+        </footer>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</body>
+</html>
