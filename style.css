@@ -9,8 +9,8 @@ body{
     text-decoration: none;
 }
 a {
-    color:#3c78c8;
-    text-decoration:none;
+  text-decoration: none;
+  color: #3c78c8;
 }
 header {
     background-color: #3c78c8;
@@ -51,15 +51,6 @@ li a:hover {
   background-color: #111;
   border-radius: 20px;
 }
-.footerpic{
-  margin: 0;
-  padding: 0;
-}
-.footerpic:hover {
-  background-color: #111;
-  border-radius: 10px;
-}
-
 .partners {
   padding: 2em;
   display: flex;
@@ -82,6 +73,15 @@ footer {
     text-align: center;
 }
 * {box-sizing:border-box}
+.footerpic{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.footerpic:hover {
+  background-color: #111;
+  border-radius: 10px;
+}
 
 /* Slideshow container */
 .slideshow-container {
