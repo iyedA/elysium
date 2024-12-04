@@ -8,7 +8,9 @@ body{
             font-size:1.2rem;
     text-decoration: none;
 }
-
+a {
+    color:#3c78c8;
+}
 header {
     background-color: #3c78c8;
     color: white;
