@@ -48,6 +48,15 @@ li a:hover {
   background-color: #111;
   border-radius: 20px;
 }
+.footerpic{
+  margin: 0;
+  padding: 0;
+}
+.footerpic:hover {
+  background-color: #111;
+  border-radius: 10px;
+}
+
 .partners {
   padding: 2em;
   display: flex;
